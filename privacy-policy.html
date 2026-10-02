@@ -107,7 +107,7 @@
       <ul>
         <li>Aucun compte n’est requis pour jouer.</li>
         <li>Aucune publicité et aucun identifiant publicitaire.</li>
-        <li>Les statistiques d’utilisation anonymes ne sont envoyées que si vous les acceptez.</li>
+        <li>Les statistiques d’utilisation anonymes et les rapports de plantage ne sont envoyés que si vous les acceptez.</li>
         <li>Aucune donnée n’est vendue.</li>
       </ul>
 
@@ -133,9 +133,31 @@
         les données ne sont pas utilisées à des fins publicitaires.
       </p>
       <p>
+        Avec ce même accord, si l’application plante, un rapport technique est
+        envoyé à Google Firebase Crashlytics (trace de l’erreur, modèle
+        d’appareil, version d’Android et de l’application, identifiant
+        d’installation Firebase) afin de corriger le problème.
+      </p>
+      <p>
         Vous pouvez retirer votre accord à tout moment dans
         <strong>Paramètres → Statistiques anonymes</strong>. Les données
-        d’analyse associées à l’appareil sont alors réinitialisées.
+        d’analyse associées à l’appareil sont alors réinitialisées et les
+        rapports de plantage non envoyés sont supprimés.
+      </p>
+      <p>
+        Les données d’utilisation liées à un appareil sont supprimées
+        automatiquement après 2 mois dans Google Analytics, et les rapports de
+        plantage après 90 jours dans Firebase Crashlytics. Seules des
+        statistiques globales, qui ne permettent pas d’identifier un appareil,
+        sont conservées plus longtemps.
+      </p>
+
+      <h2>Rappel quotidien</h2>
+      <p>
+        Si vous activez <strong>Paramètres → Rappel quotidien</strong>, GlowLoop
+        affiche une notification locale vers 18 h lorsque la séquence du jour
+        n’a pas encore été jouée. Ce rappel est calculé sur l’appareil et ne
+        transmet aucune donnée.
       </p>
 
       <h2>Vérification des mises à jour</h2>
@@ -148,7 +170,7 @@
 
       <h2>Services tiers</h2>
       <p>
-        GlowLoop utilise Google Firebase (Analytics et Remote Config) et les
+        GlowLoop utilise Google Firebase (Analytics, Crashlytics et Remote Config) et les
         services Google Play (demande d’avis). Leur traitement des données est
         décrit dans la
         <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>
@@ -160,7 +182,7 @@
       <p>
         GlowLoop peut être utilisé entièrement hors ligne. L’accès à Internet
         sert uniquement à la vérification des mises à jour et, si vous l’avez
-        accepté, à l’envoi des statistiques anonymes.
+        accepté, à l’envoi des statistiques anonymes et des rapports de plantage.
       </p>
 
       <h2>Modifications de cette politique</h2>
@@ -190,7 +212,7 @@
       <ul>
         <li>No account is required to play.</li>
         <li>No advertising and no advertising ID.</li>
-        <li>Anonymous usage statistics are sent only if you accept them.</li>
+        <li>Anonymous usage statistics and crash reports are sent only if you accept them.</li>
         <li>No data is ever sold.</li>
       </ul>
 
@@ -215,9 +237,28 @@
         used for advertising.
       </p>
       <p>
+        With the same consent, if the application crashes, a technical report is
+        sent to Google Firebase Crashlytics (error trace, device model, Android
+        and app version, Firebase installation ID) so the problem can be fixed.
+      </p>
+      <p>
         You can withdraw your consent at any time in
         <strong>Settings → Anonymous statistics</strong>. The analytics data
-        associated with the device is then reset.
+        associated with the device is then reset and unsent crash reports are
+        deleted.
+      </p>
+      <p>
+        Device-level usage data is deleted automatically after 2 months in
+        Google Analytics, and crash reports after 90 days in Firebase
+        Crashlytics. Only aggregated statistics, which cannot identify a device,
+        are kept longer.
+      </p>
+
+      <h2>Daily reminder</h2>
+      <p>
+        If you turn on <strong>Settings → Daily reminder</strong>, GlowLoop shows a
+        local notification around 6 PM when today’s sequence has not been played
+        yet. The reminder is computed on the device and sends no data.
       </p>
 
       <h2>Update checks</h2>
@@ -230,7 +271,7 @@
 
       <h2>Third-party services</h2>
       <p>
-        GlowLoop uses Google Firebase (Analytics and Remote Config) and Google
+        GlowLoop uses Google Firebase (Analytics, Crashlytics and Remote Config) and Google
         Play services (review requests). Their data processing is described in
         the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
         and on the <a href="https://firebase.google.com/support/privacy">Privacy
@@ -240,7 +281,8 @@
       <h2>Internet access</h2>
       <p>
         GlowLoop can be used fully offline. Internet access is used only for
-        update checks and, if you accepted, for sending anonymous statistics.
+        update checks and, if you accepted, for sending anonymous statistics
+        and crash reports.
       </p>
 
       <h2>Changes to this policy</h2>
